@@ -23,7 +23,7 @@ Every time you make any changes in the code then you need to copy the latest war
 
 * Copy the mysql data dump(*****.sql) (table schema + data) in ./data dir
 This used to populate the mysql database dreamapp with table schema and data. Will be executed only once in complete lifetime.   
-* **Only for advance user : to deleate all the tables and recreate the database just remove all the data inside ./mysql_data**
+
 
 
 * run the service with command  
@@ -42,4 +42,6 @@ docker-compose ps
 http://localhost:8080/dwmts
 ```
 
+
+* **Only for advance user : to deleate all the tables and recreate the database just remove all the data inside ./mysql_data**
 
