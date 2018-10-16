@@ -12,7 +12,7 @@
 
 ## Getting Started
 
-1.  **Clone the repo**
+**1.  Clone the repo**
 You need to execute this command only once
 ```
 git clone https://github.com/soniaugust17/yolo.git
