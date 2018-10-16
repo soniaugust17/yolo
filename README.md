@@ -33,7 +33,7 @@ docker-compoe up
 * Check that the mysql and jboss is running in docker 
 
 ```
-docker ps 
+docker-compose ps 
 ```
 * access the app 
 ```
