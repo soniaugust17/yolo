@@ -3,9 +3,7 @@
 ## Prerequisite 
 
 * Install docker 
-```
-(https://docs.docker.com/v17.12/install/)
-```
+[install](https://docs.docker.com/v17.12/install/)
 * Install docker-compose
 ```
 Install docker compose https://docs.docker.com/compose/install/
