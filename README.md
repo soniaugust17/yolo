@@ -21,6 +21,11 @@ git clone https://github.com/soniaugust17/yolo.git
 * Copy the war file in ./data dir  
 Every time you make any changes in the code then you need to copy the latest war in .data dir and restart the docker
 
+* Copy the mysql data dump(*****.sql) (table schema + data) in ./data dir
+This used to populate the mysql database dreamapp with table schema and data. Will be executed only once in complete lifetime.   
+* **Only for advance user : to deleate all the tables and recreate the database just remove all the data inside ./mysql_data**
+
+
 * run the service with command  
 First time this command will take few minutes and internet connectivity is must as it download its images from docker-hub (around 1 GB)
 ```
