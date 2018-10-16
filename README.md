@@ -19,7 +19,7 @@ git clone https://github.com/soniaugust17/yolo.git
 ```
 
 * Copy the *****.war file in ./data dir
-Every time you make any changes in the code then you need to copy the latest war in .data dir and restart the docker
+Every time you make any changes in the code then you need to copy the latest war in ./data dir and restart the docker
 
 * Copy the mysql data dump(*****.sql) (table schema + data) in ./data dir
 This used to populate the mysql database dreamapp with table schema and data. Will be executed only once in complete lifetime.   
