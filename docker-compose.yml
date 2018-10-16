@@ -3,8 +3,6 @@ services:
     yolo_db_1:
         image: mysql:5.7
         environment:
-            MYSQL_USER: root
-            MYSQL_PASSWORD: root
             MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: dreamworld
         hostname: yolo_db_1
@@ -12,6 +10,7 @@ services:
               - 3306:3306
         volumes:
             - ./mysql_data:/var/lib/mysql
+            - ./data/dreamworld.sql:/docker-entrypoint-initdb.d/dreamworld.sql:ro  
         
         
     yolo_web_1:
