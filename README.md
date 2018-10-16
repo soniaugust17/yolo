@@ -3,11 +3,11 @@
 ## Prerequisite 
 
 * Install docker 
-[install](https://docs.docker.com/v17.12/install/)
+** [https://docs.docker.com/v17.12/install/](https://docs.docker.com/v17.12/install/)
 * Install docker-compose
-```
-Install docker compose https://docs.docker.com/compose/install/
-```
+
+**[https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
+
 
 * Check the docker service is running
 
