@@ -12,13 +12,13 @@
 
 ## Getting Started
 
-**1.  Clone the repo**
+**1.  Clone the repo**  
 You need to execute this command only once
 ```
 git clone https://github.com/soniaugust17/yolo.git
 ```
 
-2. Copy the *****.war file in ./data dir  
+**2. Copy the *****.war file in ./data dir**  
 Every time you make any changes in the code then you need to copy the latest war in .data dir and restart the docker
 
 * Copy the mysql data dump(*****.sql) (table schema + data) in ./data dir
