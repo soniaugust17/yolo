@@ -1,0 +1,35 @@
+version: "3"
+services:
+    yolo_db_1:
+        image: mysql:5.7
+        environment:
+            MYSQL_USER: root
+            MYSQL_PASSWORD: root
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: dreamworld
+        hostname: yolo_db_1
+        ports:
+              - 3306:3306
+        volumes:
+            - ./mysql_data:/var/lib/mysql
+        
+        
+    yolo_web_1:
+         build:
+            context: ./
+            dockerfile: yolo_jboss.df
+         image: yolo_jboss 
+         command: bash -c "sleep 10;/jboss_run.sh"
+
+         environment:
+              - MYSQL_URI=yolo_db_1:3306
+
+         depends_on:
+              - yolo_db_1
+
+         ports:
+              - 8080:8080
+
+         volumes:
+              - ./data:/opt/jboss-as-7.1.1.Final/standalone/deployments
+        
