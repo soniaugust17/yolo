@@ -4,7 +4,7 @@
 
 * Install docker 
 ```
-https://docs.docker.com/v17.12/install/  
+(https://docs.docker.com/v17.12/install/)
 ```
 * Install docker-compose
 ```
