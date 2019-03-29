@@ -43,5 +43,9 @@ http://localhost:8080/dwmts
 ```
 
 
-* **Only for advance user : to deleate all the tables and recreate the database just remove all the data inside ./mysql_data**
+## Only for advance user : to deleate all the tables and recreate the database
+```
+docker-compose down -v 
+```
+* just remove all the data inside ./mysql_data
 
