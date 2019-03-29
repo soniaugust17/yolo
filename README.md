@@ -47,5 +47,5 @@ http://localhost:8080/dwmts
 ```
 docker-compose down -v 
 ```
-* just remove all the data inside ./mysql_data
+* and remove all the data inside ./mysql_data
 
