@@ -1,9 +1,11 @@
-cd /home/rahul_cse/yolo-master
+cd /home/rahul_cse/yolo
 
-docker-compose down -v
+
+/usr/local/bin/docker-compose down -v
 
 cd mysql_data
 
 rm -rf *
 
-docker-compose up &
+/usr/local/bin/docker-compose up
+
