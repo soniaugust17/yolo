@@ -94,7 +94,7 @@
                     <driver>mysql</driver>
                     <security>
                         <user-name>root</user-name>
-                        <password>root</password>
+                        <password>Yolo@123</password>
                     </security>
                     <statement>
                         <prepared-statement-cache-size>100</prepared-statement-cache-size>
