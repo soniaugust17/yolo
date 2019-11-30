@@ -58,6 +58,11 @@ mysqldump -u <someuser> -p --no-create-info <database_name> <table_name> >> <sam
 ```
 mysqldump -u <someuser> -p <database_name> > file_name.sql
 ```
+* Copy the dump file from container to host
+```
+sudo docker cp <container_id>:<absouldte path of file inside container> <directory of host machine>
+
+```
 ## Only for advance user : to deleate all the tables and recreate the database
 ```
 docker-compose down -v 
