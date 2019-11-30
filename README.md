@@ -41,7 +41,16 @@ docker-compose ps
 ```
 http://localhost:8080/dwmts
 ```
+## Taking database backup
+*Go inside mysql container and 
+ sudo docker exec -it <container id> bash 
+* Scheam Only
+mysqldump --no-data -u <someuser> -p <database_name> > file_name.sql
+* for product for launch you need the data also 
+mysqldump -u <someuser> -p --no-create-info <database_name> <table_name> >> <same file name as above>
 
+*With all data
+mysqldump -u <someuser> -p <database_name> > file_name.sql
 
 ## Only for advance user : to deleate all the tables and recreate the database
 ```
