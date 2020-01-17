@@ -63,6 +63,16 @@ mysqldump -u <someuser> -p <database_name> > file_name.sql
 sudo docker cp <container_id>:<absouldte path of file inside container> <directory of host machine>
 
 ```
+* Check the docker log file size 
+```
+sudo sh -c "du -ch /var/lib/docker/containers/*/*-json.log"
+
+```
+* Delete the docker log files
+```
+sudo sh -c "truncate -s 0 /var/lib/docker/containers/*/*-json.log"
+
+```
 ## Only for advance user : to deleate all the tables and recreate the database
 ```
 docker-compose down -v 
